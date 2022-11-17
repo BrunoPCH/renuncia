@@ -13,6 +13,9 @@ let divModoPlaya = document.getElementsByClassName("modo_playa")[0];
 btnNo.addEventListener("mouseenter", function (e) {
   moverPositionRandom(e.target);
 });
+btnNo.addEventListener("onTouchstart", function (e) {
+  moverPositionRandom(e.target);
+});
 btnSi.addEventListener("click", function (e) {
   alert(
     "Era INEVITABLE ¡Vamonos un mes a la playa 🌊 🌊 😁! ¿Entonces qué? ¿A la aventura?"
