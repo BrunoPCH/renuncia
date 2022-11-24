@@ -29,15 +29,15 @@ console.log(var4);
 console.log(var5);
 console.log(var6);
 
-// EJERCICIO tengo una actividad para poner a prueba todo lo aprendido hoy u.u: "tomar 5 notas del alumno entre 0 y 10, calcular el promedio y mostrar la nota más alta, nota media y nota menor" u.u
+// EJERCICIO tengo una actividad para poner a prueba todo lo aprendido hoy u.u: "tomar 5 notas del ALUMNO entre 0 y 10, calcular el promedio y mostrar la nota más alta, nota media y nota menor" u.u
 
-const alumno1 = 10;
-const alumno2 = 5;
-const alumno3 = 8;
-const alumno4 = 7;
-const alumno5 = 9;
+const ALUMNO1 = 10;
+const ALUMNO2 = 5;
+const ALUMNO3 = 8;
+const ALUMNO4 = 7;
+const ALUMNO5 = 9;
 
-let calificaciones = [alumno1, alumno2, alumno3, alumno4, alumno5];
+let calificaciones = [ALUMNO1, ALUMNO2, ALUMNO3, ALUMNO4, ALUMNO5];
 console.log(calificaciones);
 
 let promedio = 0;
