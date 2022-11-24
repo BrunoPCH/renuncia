@@ -25,7 +25,7 @@ btnSi.addEventListener("click", function (e) {
   divModoPlaya.style.display = "flex";
   divModoPlaya.style["z-index"] = "1000";
 
-  // const CANCION_PLAYA = new Audio("audios\\calma-editado.mp3");
+  const CANCION_PLAYA = new Audio("audios\\calma-editado.mp3");
   CANCION_PLAYA.play();
 });
 
