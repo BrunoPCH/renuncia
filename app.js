@@ -25,6 +25,27 @@ btnSi.addEventListener("click", function (e) {
   divModoPlaya.style.display = "flex";
   divModoPlaya.style["z-index"] = "1000";
 
-  const CANCION_PLAYA = new Audio("audios\\calma-editado.mp3");
+  // const CANCION_PLAYA = new Audio("audios\\calma-editado.mp3");
   CANCION_PLAYA.play();
+});
+
+// //SUPLANTA un HTML cuando escucha un click en el div Modo playa
+// divModoPlaya.addEventListener("click", function (e) {
+//   divModoPlaya.innerHTML =
+//     "<div><h2>Esto es un subtitulo insertado cada vez que da click</h2><p>Esto es un parrafo insertado cada vez que haces click</p></div> ";
+// });
+// Agrega un elemento HTML IMG cada vez que hace click
+divModoPlaya.addEventListener("click", function (e) {
+  const img = document.createElement("img");
+  img.src = "images/mr-bean-mr-bean-holiday.gif";
+  divModoPlaya.appendChild(img);
+});
+
+botones = document.getElementsByTagName("button");
+console.log(botones[1]);
+
+///para poner advertencia antes de cerrar
+window.addEventListener("beforeunload", (event) => {
+  event.preventDefault();
+  event.returnValue = "";
 });
