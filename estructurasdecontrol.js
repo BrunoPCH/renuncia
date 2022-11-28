@@ -1,3 +1,4 @@
+// Ciclo for
 for (let i = 0; i < 9; i += 2) {
   console.log(i);
 }
@@ -51,9 +52,68 @@ console.log(promedio);
 
 // SACAR CALIFICACION MAXIMA
 
-let calificacionMaxima = Math.max(calificaciones);
+let calificacionMaxima = Math.max(...calificaciones);
 console.log(calificacionMaxima);
 
 // SACAR CALIFICACION MEDIA
 
 // SACAR CALIFICACION MINIMA
+calificacionMaxima = Math.min(...calificaciones);
+console.log(calificacionMaxima);
+
+console.log("________________ IF__________________ ELSE");
+
+//1.PREGUNTAR
+//2 Validar confirm
+//3 Validar mayoría de edad
+// 4 validar que no sea muy longevo
+// 5 Validar negativos
+// 6 Validar menores de 18
+
+// Validar edad
+
+// If- else if- else
+function validarEdad(edad) {
+  if (confirm("¿Quieres seguir adelante con esto?")) {
+    console.log("Sigue bajo tu propio riesgo");
+    if (edad >= 18 && edad <= 150) {
+      console.log("Perfecto ya los tienes bien puestos para decidir");
+    } else if (edad > 150) {
+      console.log("¡¡ah chinga!! ¿eres un zombie?");
+    } else if (edad >= 0) {
+      console.log("Tas muy chavo! vuelve pronto");
+    } else {
+      console.log("¡ah chis! no deberias de existir");
+    }
+  } else {
+    console.log("Que miedoso! 😶");
+  }
+}
+
+// SWITCH-------------------------------------
+function mandarMensajes() {
+  switch (
+    //El switch hace una comparacion estrictamente igual "==="
+    edad //El switch capta strings y hay que manejar strings en los cases o se convierte el numero con " edad = Number(edad);"
+  ) {
+    case 13:
+      console.log("Entre mas me la jalas, mas me crece");
+      break;
+    case 17:
+      console.log("espera un año más.");
+      break;
+    default:
+      console.log("No pues UWU!");
+  }
+}
+
+// IF ELSE
+let edad = prompt("Introduce tu edad mijo!");
+if (edad && !isNaN(edad)) {
+  edad = Number(edad); //convierte a numero
+  validarEdad(edad);
+  mandarMensajes(edad);
+} else {
+  alert("Debes de introducir tu edad");
+  location.reload();
+}
